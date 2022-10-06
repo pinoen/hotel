@@ -24,7 +24,6 @@ Se trata de una aplicacion para un Hotel donde nuestro cliente nos solicita desa
 - Java
 - IntelliJ IDEA Community Edition
 - Biblioteca JCalendar
-- MySQL
-- Plugin WindowBuilder </br>
+- MySQL </br>
 
 
