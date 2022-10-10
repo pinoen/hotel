@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e302659-0a04-4f15-97a0-0884bc7e341f" name="Changes" comment="codigo inicial junto a live coding">
-      <change afterPath="$PROJECT_DIR$/src/controller/HuespedController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/HuespedDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Huesped.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/MenuPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/RegistroHuesped.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/RegistroHuesped.java" afterDir="false" />
-    </list>
+    <list default="true" id="7e302659-0a04-4f15-97a0-0884bc7e341f" name="Changes" comment="funcionalidad desde la view para el registro de nuevos huespedes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -151,7 +143,35 @@
       <option name="project" value="LOCAL" />
       <updated>1665086855873</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="se agrega toda la funcionalidad relacionada el registro de nuevos huespedes">
+      <created>1665424380177</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665424380177</updated>
+    </task>
+    <task id="LOCAL-00003" summary="se agregan datos de logueo predeterminado en readme">
+      <created>1665424428211</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665424428211</updated>
+    </task>
+    <task id="LOCAL-00004" summary="desarrollado por Emilio Pino">
+      <created>1665424482544</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665424482544</updated>
+    </task>
+    <task id="LOCAL-00005" summary="funcionalidad desde la view para el registro de nuevos huespedes">
+      <created>1665424518921</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665424518921</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -167,6 +187,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="codigo inicial junto a live coding" />
-    <option name="LAST_COMMIT_MESSAGE" value="codigo inicial junto a live coding" />
+    <MESSAGE value="se agrega toda la funcionalidad relacionada el registro de nuevos huespedes" />
+    <MESSAGE value="se agregan datos de logueo predeterminado en readme" />
+    <MESSAGE value="desarrollado por Emilio Pino" />
+    <MESSAGE value="funcionalidad desde la view para el registro de nuevos huespedes" />
+    <option name="LAST_COMMIT_MESSAGE" value="funcionalidad desde la view para el registro de nuevos huespedes" />
   </component>
 </project>
