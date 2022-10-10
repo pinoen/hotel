@@ -7,6 +7,9 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JTextField;
 import java.awt.Color;
 import com.toedter.calendar.JDateChooser;
+import controller.HuespedController;
+import model.Huesped;
+
 import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JLabel;
@@ -19,9 +22,12 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
+import java.sql.Date;
 import java.text.Format;
 import java.awt.event.ActionEvent;
 import java.awt.Toolkit;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import javax.swing.SwingConstants;
 import javax.swing.JSeparator;
 
@@ -253,6 +259,41 @@ public class RegistroHuesped extends JFrame {
 		btnguardar.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
+				try {
+					SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+					String nombre = txtNombre.getText();
+					String apellido = txtApellido.getText();
+					Date nacimiento = Date.valueOf(String.valueOf(LocalDate.parse((simpleDateFormat.format(txtFechaN.getDate())))));
+					String nacionalidad = (String) txtNacionalidad.getSelectedItem();
+					String telefono = txtTelefono.getText();
+					Integer reservaId = Integer.valueOf(txtNreserva.getText());
+
+					Date hoy = Date.valueOf(LocalDate.now());
+
+					boolean dataIsValid = (nombre.length() > 0)
+							&& apellido.length() > 0
+							&& nacimiento.before(hoy)
+							&& nacionalidad.length() > 0
+							&& telefono.length() >= 10 && telefono.length() <= 15;
+
+					System.out.println(dataIsValid);
+					if (dataIsValid){
+						Huesped huesped = new Huesped(nombre, apellido,nacimiento,nacionalidad,telefono,reservaId);
+
+						// Registrar el nuevo huesped:
+						HuespedController huespedController = new HuespedController();
+						huespedController.registrar(huesped);
+						System.out.println(huesped);
+
+						Exito.main(null);
+						dispose();
+					}else {
+						JOptionPane.showMessageDialog(null, "Verificar que todos los campos esten correctamente completados.");
+					}
+				}catch (Exception exception){
+					JOptionPane.showMessageDialog(null, "Error en el registro!");
+				}
 			}
 		});
 		btnguardar.setLayout(null);
