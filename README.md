@@ -19,6 +19,11 @@ Se trata de una aplicacion para un Hotel donde nuestro cliente nos solicita desa
   
   </br>
 
+## :key: Logueo predeterminado:
+
+- usuario: admin
+- contrasena: admin
+
 ## 🖥️ Tecnologías Utilizadas:
 
 - Java
